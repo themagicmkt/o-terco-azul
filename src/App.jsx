@@ -2,29 +2,43 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { Star, Truck, Check, Heart } from "lucide-react";
 
 // Utilizar imagens reais do produto ao subir, por ora, usar placeholder
-const blueRosaryImg = "/img/tercoazul.webp";
-const blueRosaryKitImg = "img/terco1.webp";
-const warrantyImg = "img/terco2.webp";
+const blueRosaryImg = "/public/img/mockupfinal-2.webp";
+const blueRosaryKitImg = "/img/terco1.webp";
+const warrantyImg = "/img/terco2.webp";
 const depoList = [
   {
     name: "Maria Silva",
     city: "São Paulo",
-    img: "https://randomuser.me/api/portraits/women/64.jpg",
-    text: "Desde que comecei a usar o Terço Azul, sinto muito mais serenidade e proteção. Recomendo para todos que buscam equilíbrio.",
+    img: "/public/img/depoimento.png",
+    text: "Entrei no desafio com o coração aflito e terminei com uma paz que não sentia há anos. O Terço Azul é uma bênção na minha vida.",
     stars: 5,
   },
   {
     name: "João Ramos",
     city: "Bahia",
-    img: "https://randomuser.me/api/portraits/men/7.jpg",
-    text: "Minha fé se renovou e minha vida floresceu após apenas uma semana de uso. Muito satisfeito!",
+    img: "/img/depoimento01.png",
+    text: "No terceiro dia do desafio, senti uma clareza espiritual que mudou minha forma de orar. No sétimo, recebi uma resposta que esperava há meses.",
     stars: 5,
   },
   {
     name: "Marina Araujo",
     city: "Rio de Janeiro",
-    img: "https://randomuser.me/api/portraits/women/85.jpg",
-    text: "Produto de extrema qualidade, sinto uma paz enorme toda vez que faço minhas orações com ele.",
+    img: "/img/depoimento02.png",
+    text: "As missões diárias me ajudaram a focar e renovar minha fé. Cada oração parecia falar direto comigo. Um divisor de águas.",
+    stars: 5,
+  },
+  {
+    name: "Neusa Ramoso",
+    city: "Curitiba",
+    img: "/img/depoimento03.png",
+    text: "Estou no quarto dia do desafio e já sinto mudanças no meu interior. O terço chegou rápido e é ainda mais bonito pessoalmente.",
+    stars: 5,
+  },
+  {
+    name: "Fátima Oliveira",
+    city: "São Paulo",
+    img: "/img/depoimento04.png",
+    text: "Recebi minha graça no sexto dia. A fé que recuperei nesse desafio não tem preço. Recomendo de olhos fechados.",
     stars: 5,
   },
 ];
@@ -59,18 +73,18 @@ const faqList = [
 const benefits = [
   {
     icon: <img src="https://cdn-icons-png.flaticon.com/512/1818/1818141.png" alt="Saúde" className="w-12 h-12" />,
-    title: "Saúde Emocional",
-    description: "O azul inspira calma e reduz a ansiedade, convidando a paz para dentro do seu coração.",
+    title: "Equilíbrio Emocional",
+    description: "Durante o desafio, você vai aprender a controlar a ansiedade e encontrar paz interior em meio ao caos.",
   },
   {
-    icon: <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Amor" className="w-12 h-12" />,
-    title: "Fé Renovada",
-    description: "Fortaleça sua conexão espiritual e sinta o poder da oração diariamente.",
+    icon: <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Fé" className="w-12 h-12" />,
+    title: "Conexão Espiritual",
+    description: "As orações guiadas de cada dia vão fortalecer sua fé e alinhar sua energia com o que realmente importa.",
   },
   {
     icon: <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Prosperidade" className="w-12 h-12" />,
-    title: "Prosperidade",
-    description: "Abra caminhos para conquistas. Depoimentos reais mostram milagres em 7 dias de uso.",
+    title: "Caminho da Prosperidade",
+    description: "Ao seguir os 7 dias de oração com fé, você ativa um ciclo de bênçãos e abre espaço para receber graças.",
   },
 ];
 
@@ -79,7 +93,7 @@ const Index = () => {
     <div className="bg-background font-outfit">
       {/* 1. Aviso topo */}
       <section className="bg-primary px-3 py-2 text-center text-white font-medium text-base tracking-wide">
-        Terço Azul Celestial + Guia de Orações Exclusivo
+        Desafio espiritual 7 dias com o Terço Azul Celestial!<br />
       </section>
 
       {/* 2. Mensagem frete grátis/estoque */}
@@ -92,19 +106,18 @@ const Index = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 max-w-5xl">
           {/* Left Text */}
           <div className="flex-1 text-center md:text-left px-4">
-            <h1 className="text-3xl md:text-5xl font-bold mb-5 text-primary">
-              Use o Terço Azul da <span className="text-sky-600">Prosperidade</span> <br className="hidden md:block"/>por 7 dias, & Veja a Transformação em Sua Vida
-            </h1>
-            <p className="text-lg text-muted-foreground mb-3">
-              Eleve sua fé, encontre serenidade e sinta a proteção do sagrado em todo momento. 
-            </p>
-            <p className="text-base text-muted-foreground mb-6">
-              O Terço Azul Celestial é mais do que um acessório, é um símbolo poderoso de <strong>proteção, prosperidade e fé</strong>, acompanhado do nosso Guia Exclusivo de Orações.
-            </p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-5 text-primary">
+              Você Teria Coragem de <span className="text-sky-600">Orar por 7 Dias Seguidos </span><br className="hidden md:block" />
+              se Soubesse que uma <span className="text-sky-600">Graça Está Prestes a Chegar?</span>
+          </h1>
+          <p className="text-lg text-muted-foreground mb-3">
+              Descubra o poder de uma oração guiada com fé, propósito e direção. 
+              Durante 7 dias, siga as missões no app, use o Terço Azul e prepare-se para receber a graça que você tanto espera.
+          </p>
             <a href="https://seucheckout.com" 
                className="inline-block bg-primary text-white rounded-full px-8 py-3 font-semibold shadow-md transition hover:bg-sky-700 text-lg tracking-wide"
                target="_blank" rel="noopener">
-              PEÇA O SEU AGORA
+              COMEÇAR JORNADA
             </a>
           </div>
           {/* Right Image */}
@@ -143,18 +156,42 @@ const Index = () => {
         </div>
       </section>
 
+{/* 5.5 Imagem Destaque Centralizada com Imagem ao Lado */}
+<section className="bg-white py-12 px-4">
+  <div className="container mx-auto max-w-4xl p-5">
+    <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary mb-6">
+      Ore por 7 dias e veja a sua graça ser alcançada.
+    </h2>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <img 
+        src="/public/img/tercoazul03.webp" 
+        alt="Imagem Destaque" 
+        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+      />
+      <img 
+        src="/public/img/oleo.webp" 
+        alt="Imagem Lateral" 
+        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+      />
+      <img 
+        src="/public/img/vela-2.webp" 
+        alt="Imagem Lateral" 
+        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+      />
+    </div>
+  </div>
+</section>
+
       {/* 6. Oferta Exclusiva */}
       <section className="container mx-auto py-14 flex justify-center items-center">
-        <div class="w-full max-w-3xl mx-4 md:mx-auto p-0 md:p-6 bg-gradient-to-tr from-[#e8f1fc] via-[#f9fbff] to-white rounded-2xl shadow-xl border border-sky-100 animate-fade-in">
+      <div className="w-full max-w-3xl mx-4 md:mx-auto p-0 md:p-6 bg-gradient-to-tr from-[#e8f1fc] via-[#f9fbff] to-white rounded-2xl shadow-xl border border-sky-100 animate-fade-in">
           <div className="flex flex-col md:flex-row gap-0 md:gap-8">
             {/* Imagem lado esquerdo */}
             <div className="flex-1 flex justify-center items-center bg-[#d3eafd] rounded-t-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none p-6 md:p-0">
               <img 
                 src={blueRosaryImg} 
                 alt="Kit Terço Azul Celestial" 
-                className="w-full max-w-xs rounded-xl border border-sky-300 shadow-md object-cover hover-scale"
-                style={{ background: "linear-gradient(90deg, #e3f0fd 0%, #eef6fc 100%)" }}
-              />
+                className="w-full max-w-xs rounded-xl "/>
             </div>
             {/* Detalhes da Oferta */}
             <div className="flex-1 flex flex-col justify-center gap-3 px-6 py-5">
