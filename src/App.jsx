@@ -41,34 +41,46 @@ const depoList = [
     text: "Recebi minha graça no sexto dia. A fé que recuperei nesse desafio não tem preço. Recomendo de olhos fechados.",
     stars: 5,
   },
+  {
+    name: "Paulo Freitas",
+    city: "São Paulo",
+    img: "/img/depoimento05.png",
+    text: "Recebi tudo direitinho e ja comecei, ja senti muitas melhoras amem. Deus abençõe a todos.",
+    stars: 5,
+  },
 ];
 
-const faqList = [
-  {
-    q: "O que torna o Terço Azul especial?",
-    a: "O Terço Azul é confeccionado com contas de alta qualidade, transmitindo tranquilidade, proteção e fé renovada. Seu design exclusivo une beleza e espiritualidade em um só produto.",
-  },
-  {
-    q: "Posso usar diariamente?",
-    a: "Sim! O Terço Azul foi criado para resistir ao uso diário mantendo seu brilho e propósito.",
-  },
-  {
-    q: "Serve como acessório ou apenas para orações?",
-    a: "É versátil: use como peça de oração ou acessório inspirador, trazendo energia positiva para seu dia.",
-  },
-  {
-    q: "Tem garantia?",
-    a: "Você tem 30 dias de garantia total. Se não amar, devolvemos seu dinheiro.",
-  },
-  {
-    q: "Em quanto tempo chega?",
-    a: "Você recebe seu terço de 3 a 7 dias úteis em qualquer canto do Brasil – frete totalmente grátis.",
-  },
-  {
-    q: "Entregam em todo Brasil?",
-    a: "Sim, entregamos para todo o país. Compre com segurança e tranquilidade.",
-  },
-];
+
+  const faqList = [
+    {
+      q: "O que é o Desafio Espiritual de 7 Dias?",
+      a: "É uma jornada guiada com orações e missões diárias, criada para ajudar você a se conectar com sua espiritualidade, buscar sua graça e transformar sua vida em apenas 7 dias.",
+    },
+    {
+      q: "O que está incluso no Desafio?",
+      a: "Você recebe: o Terço Azul da Prosperidade, o Livro físico 'Desafio Espiritual 7 Dias', acesso ao App com missões diárias, um óleo ungido, vela aromática, pôster de oração e um cartão de bênção personalizado.",
+    },
+    {
+      q: "Preciso fazer as orações em um horário específico?",
+      a: "Não. O importante é que você reserve um momento do seu dia para se conectar com fé e presença. O aplicativo ajuda você a acompanhar tudo com facilidade.",
+    },
+    {
+      q: "E se eu perder um dia do desafio?",
+      a: "Você pode retomar no dia seguinte. O importante é concluir os 7 dias com fé, intenção e comprometimento.",
+    },
+    {
+      q: "Funciona para qualquer pessoa?",
+      a: "Sim. O Desafio é para qualquer pessoa que esteja aberta à espiritualidade e deseje atrair paz, prosperidade e proteção para sua vida.",
+    },
+    {
+      q: "Tem garantia?",
+      a: "Sim. Você tem 30 dias para testar. Se não sentir nenhuma transformação, devolvemos 100% do valor sem burocracia.",
+    },
+    {
+      q: "Em quanto tempo chega meu kit?",
+      a: "O envio é imediato e o prazo médio de entrega é de 3 a 7 dias úteis. Frete grátis para todo o Brasil.",
+    },
+  ];
 
 const benefits = [
   {
@@ -136,8 +148,12 @@ const Index = () => {
       {/* 5. Benefícios */}
       <section className="bg-gradient-to-tr from-[#D3E4FD] via-[#F1F1F1] to-white py-12 px-1">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-center text-2xl md:text-4xl font-bold text-primary mb-3">O Milagre dos 7 Dias</h2>
-          <p className="text-center text-base md:text-lg text-muted-foreground mb-10">Ao utilizar o Terço Azul por 7 dias seguidos e seguir nosso Guia de Orações, você estará se conectando com sua espiritualidade e permitindo que bênçãos fluam para sua vida.</p>
+        <h2 className="text-center text-2xl md:text-4xl font-bold text-primary mb-3">
+         O Desafio Espiritual que Está Tocando Vidas
+        </h2>
+      <p className="text-center text-base md:text-lg text-muted-foreground mb-10">
+  Durante 7 dias, você será guiado(a) por uma jornada de oração, fé e transformação. Com o Terço Azul, o Livro de Missões e o App do Desafio, você viverá uma experiência profunda de reconexão espiritual — e muitos já relatam bênçãos alcançadas antes mesmo do 7º dia.
+      </p>
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8">
             {benefits.map((b,i) => (
               <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center w-full max-w-xs" key={i}>
@@ -150,7 +166,7 @@ const Index = () => {
           <div className="flex justify-center mt-8">
             <a href="https://seucheckout.com" 
                className="rounded-full bg-primary text-white text-lg font-bold px-8 py-3 shadow transition hover:bg-sky-700">
-              GARANTIR MEU TERÇO
+              COMEÇAR JORNADA
             </a>
           </div>
         </div>
@@ -160,7 +176,7 @@ const Index = () => {
 <section className="bg-white py-12 px-4">
   <div className="container mx-auto max-w-4xl p-5">
     <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary mb-6">
-      Ore por 7 dias e veja a sua graça ser alcançada.
+      Veja o que acompanha o seu kit.
     </h2>
     <div className="flex flex-col md:flex-row justify-center items-center gap-6">
       <img 
@@ -204,7 +220,7 @@ const Index = () => {
               </div>
               {/* Título grande */}
               <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                Kit Terço Azul Celestial + Guia Exclusivo de Orações
+                Kit Desafio Espiritual 7 dias + Brinde.
               </h2>
               {/* Avaliações */}
               <div className="flex items-center gap-1 mb-2">
@@ -228,7 +244,7 @@ const Index = () => {
               <ul className="mb-4 space-y-2 text-base">
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Terço Azul feito à mão, contas resistentes e detalhes premium</li>
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Guia Exclusivo de Orações incluso</li>
-                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Presenteie ou reze, ideal para todas as ocasiões</li>
+                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Óleo Ungido + Vela aromática</li>
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Envio imediato para todo o Brasil</li>
               </ul>
               {/* Garantia e Botão */}
@@ -304,7 +320,7 @@ const Index = () => {
       {/* 9. Rastreio */}
       <section className="container mx-auto max-w-2xl py-12 px-2">
         <div className="rounded-2xl shadow-lg bg-gradient-to-tr from-secondary/60 to-white p-8 flex flex-col items-center">
-          <h2 className="text-2xl font-bold text-primary mb-2">Rastreie Seu Pedido</h2>
+          <h2 className="text-2xl font-bold text-primary mb-2">Rastreie Seu Kit</h2>
           <p className="text-muted-foreground mb-4 text-center">Depois de realizar seu pedido, utilize seu código de rastreio abaixo para acompanhar a entrega.</p>
           <form
             className="w-full max-w-md flex flex-col gap-3"
@@ -329,8 +345,7 @@ const Index = () => {
       {/* 10. Rodapé */}
       <footer className="bg-[#E6ECF7] py-8 mt-10">
         <div className="container mx-auto text-center flex flex-col items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/284/284259.png" alt="Selo" className="w-20 mb-2" />
-          <img src="https://cdn-icons-png.flaticon.com/512/1047/1047247.png" alt="Pagamentos" className="w-36 mb-4" />
+          <img src="/img/crucifixo.png" alt="Selo" className="w-20 mb-2" />
           <p className="text-xs text-muted-foreground font-medium">
             Presente Divino – Artigos Religiosos ©<br/>
             <a href="#" className="underline text-sky-600 hover:text-sky-900 font-semibold">Políticas de entrega e garantia</a>
