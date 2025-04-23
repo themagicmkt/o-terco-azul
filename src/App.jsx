@@ -2,14 +2,14 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { Star, Truck, Check, Heart } from "lucide-react";
 
 // Utilizar imagens reais do produto ao subir, por ora, usar placeholder
-const blueRosaryImg = "/public/img/mockupfinal-2.webp";
+const blueRosaryImg = "img/mockupfinal-2.webp";
 const blueRosaryKitImg = "/img/terco1.webp";
 const warrantyImg = "/img/terco2.webp";
 const depoList = [
   {
     name: "Maria Silva",
     city: "São Paulo",
-    img: "/public/img/depoimento.png",
+    img: "/img/depoimento.png",
     text: "Entrei no desafio com o coração aflito e terminei com uma paz que não sentia há anos. O Terço Azul é uma bênção na minha vida.",
     stars: 5,
   },
@@ -164,17 +164,17 @@ const Index = () => {
     </h2>
     <div className="flex flex-col md:flex-row justify-center items-center gap-6">
       <img 
-        src="/public/img/tercoazul03.webp" 
+        src="/img/tercoazul03.webp" 
         alt="Imagem Destaque" 
         className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
       />
       <img 
-        src="/public/img/oleo.webp" 
+        src="/img/oleo.webp" 
         alt="Imagem Lateral" 
         className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
       />
       <img 
-        src="/public/img/vela-2.webp" 
+        src="/img/vela-2.webp" 
         alt="Imagem Lateral" 
         className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
       />
