@@ -9,14 +9,14 @@ const depoList = [
     name: "Maria Silva",
     city: "São Paulo",
     img: "/img/depoimento.png",
-    text: "Desde que comecei a usar o Terço Azul, minha fé se fortaleceu. Ele transmite uma paz que não sei explicar.",
+    text: "Só comprei porque era para pagar na entrega. Chegou direitinho e já paguei. Muito lindo",
     stars: 5,
   },
   {
     name: "João Ramos",
     city: "Bahia",
     img: "/img/depoimento01.png",
-    text: "O Terço Azul me acompanha em todas as orações. É lindo, resistente e tem um significado especial pra mim.",
+    text: "Muito Bom esse negócio de pagar na entrega! O terço azul me acompanha todo dia. Deus abençõe.",
     stars: 5,
   },
   {
@@ -56,6 +56,10 @@ const faqList = [
   {
     q: "O que torna o Terço Azul especial?",
     a: "Ele é feito com contas resistentes de um azul profundo que transmite paz, fé e proteção. Seu acabamento premium e design exclusivo o tornam ideal para orações e também como símbolo de espiritualidade no dia a dia.",
+  },
+  {
+    q: "Como vou pagar o terço?",
+    a: "Após o recebimento você escolhe como prefere pagar e finaliza seu pagamento pela nossa página.",
   },
   {
     q: "Posso usar o Terço Azul todos os dias?",
@@ -106,12 +110,12 @@ const Index = () => {
       
       {/* 1. Aviso topo */}
       <section className="bg-primary px-3 py-2 text-center text-white font-medium text-base tracking-wide">
-        Desafio espiritual 7 dias com o Terço Azul Celestial!<br />
+        Peça agora - Só pague somente na entrega<br />
       </section>
 
       {/* 2. Mensagem frete grátis/estoque */}
       <section className="bg-secondary/80 px-3 py-1 text-center flex justify-center items-center gap-2 text-sm text-primary font-semibold border-b border-border">
-        <Truck className="inline w-5 h-5 text-primary" /> ÚLTIMAS UNIDADES! Frete Grátis para todo o Brasil 🚚
+        <Truck className="inline w-5 h-5 text-primary" /> ÚLTIMAS UNIDADES! Peça Agora Pague Na Entrega 🚚
       </section>
 
       {/* 3. Hero / CTA */}
@@ -127,10 +131,10 @@ const Index = () => {
             </p>
             <p className="text-base text-muted-foreground mb-6">
               O Terço Azul Celestial é mais do que um acessório, é um símbolo poderoso de <strong>proteção, prosperidade e fé</strong></p>
-            <a href="https://seucheckout.com" 
+            <a href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy" 
                className="inline-block bg-primary text-white rounded-full px-8 py-3 font-semibold shadow-md transition hover:bg-sky-700 text-lg tracking-wide"
                target="_blank" rel="noopener">
-              PEÇA O SEU AGORA
+              PAGUE NA ENTREGA
             </a>
           </div>
           {/* Right Image */}
@@ -163,19 +167,50 @@ const Index = () => {
             ))}
           </div>
           <div className="flex justify-center mt-8">
-            <a href="https://seucheckout.com" 
+            <a href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy" 
                className="rounded-full bg-primary text-white text-lg font-bold px-8 py-3 shadow transition hover:bg-sky-700">
-              COMEÇAR JORNADA
+              QUERO MEU TERÇO AZUL
             </a>
           </div>
         </div>
       </section>
 
+    {/* 11. Brinde Especial */}
+<section className="bg-gradient-to-br from-[#f0f9ff] via-white to-[#e6f0ff] py-12 px-4">
+  <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-10">
+    
+    {/* Imagem do óleo */}
+    <div className="flex-1 flex justify-center">
+      <img 
+        src="/img/mirra.webp" 
+        alt="Óleo Ungido de Brinde" 
+        className="w-full max-w-xs " 
+      />
+    </div>
+
+    {/* Texto e CTA */}
+    <div className="flex-1 text-center md:text-left">
+      <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">
+        Peça seu <span className="text-sky-700">Terço Azul</span> agora e <br className="hidden md:block" /> ganhe um <span className="text-green-700">Óleo Ungido</span> de brinde!
+      </h2>
+      <p className="text-muted-foreground text-base md:text-lg mb-6 leading-relaxed">
+        Além do Terço Azul Celestial, você receberá gratuitamente um frasco de óleo ungido, abençoado e preparado especialmente para acompanhar suas orações. Uma oferta limitada para quem busca fortalecer sua fé com ainda mais poder espiritual.
+      </p>
+      <a href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy"
+         target="_blank" rel="noopener"
+         className="inline-block bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:from-blue-600 hover:to-sky-700 transition">
+        GARANTIR MEU TERÇO COM BRINDE
+      </a>
+    </div>
+
+  </div>
+</section>  
+
 {/* 5.5 Imagem Destaque Centralizada com Imagem ao Lado */}
 <section className="bg-white py-12 px-4">
   <div className="container mx-auto max-w-4xl px-4 sm:px-6 py-5">
     <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary mb-6">
-      Veja o que acompanha o seu kit.
+      Mais do que um Terço, uma peça única e exclusiva.
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <img 
@@ -213,6 +248,8 @@ const Index = () => {
       </p>
     </div>
 
+    
+
     {/* Imagem depois no mobile */}
     <div className="flex-1">
       <img 
@@ -221,7 +258,6 @@ const Index = () => {
         className="w-full max-w-md mx-auto rounded-xl shadow-md object-cover border border-secondary"
       />
     </div>
-
   </div>
 </section>
       {/* 6. Oferta Exclusiva */}
@@ -247,7 +283,7 @@ const Index = () => {
               </div>
               {/* Título grande */}
               <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                Terço Azul São Bento.
+                Terço Azul São Bento + Óleo ungido.
               </h2>
               {/* Avaliações */}
               <div className="flex items-center gap-1 mb-2">
@@ -280,13 +316,13 @@ const Index = () => {
                 <span className="text-green-700 font-semibold text-base">Garantia total de 30 dias</span>
               </div>
               <a 
-                href="https://seucheckout.com"
+                href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy"
                 className="block w-full md:w-auto bg-gradient-to-r from-sky-500 to-blue-600 hover:from-blue-600 hover:to-sky-700 text-white font-bold py-4 px-8 md:rounded-full rounded-lg text-xl text-center shadow-xl transition hover-scale"
                 style={{ letterSpacing: ".02em" }}
                 target="_blank"
                 rel="noopener"
               >
-                COMPRAR AGORA
+                PAGAR NA ENTREGA
               </a>
               <div className="flex items-center gap-2 mt-3">
                 <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M15 9l-6 6"/></svg>
@@ -370,17 +406,24 @@ const Index = () => {
       </section>
 
       {/* 10. Rodapé */}
+      {/* 10. Rodapé */}
       <footer className="bg-[#E6ECF7] py-8 mt-10">
-        <div className="container mx-auto text-center flex flex-col items-center">
-          <img src="/img/crucifixo.png" alt="Selo" className="w-20 mb-2" />
-          <p className="text-xs text-muted-foreground font-medium">
-            Presente Divino – Artigos Religiosos ©<br/>
-            <a href="#" className="underline text-sky-600 hover:text-sky-900 font-semibold">Políticas de entrega e garantia</a>
-            <br/>
-            Todos os direitos reservados © 2024
-          </p>
-        </div>
-      </footer>
+  <div className="container mx-auto text-center flex flex-col items-center gap-4">
+
+    <img src="/img/crucifixo.png" alt="Selo" className="w-20 mb-2" />
+    
+    <div className="flex gap-3 justify-center items-center">
+      <img src="/img/imagens-de-formas-de-pagamento-png-4.png" alt="Formas de Pagamento" className="h-6 md:h-8 w-auto" />
+    </div>
+
+    <p className="text-xs text-muted-foreground font-medium text-center px-4">
+      Presente Divino – Artigos Religiosos ©<br />
+      <a href="#" className="underline text-sky-600 hover:text-sky-900 font-semibold">Políticas de entrega e garantia</a><br />
+      Todos os direitos reservados © 2024
+    </p>
+
+  </div>
+</footer>
     </div>
   );
 };
