@@ -1,108 +1,109 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Star, Truck, Check, Heart } from "lucide-react";
 
-// Utilizar imagens reais do produto ao subir, por ora, usar placeholder
-const blueRosaryImg = "img/mockupfinal-2.webp";
-const blueRosaryKitImg = "/img/terco1.webp";
-const warrantyImg = "/img/terco2.webp";
+const terco1 = "/img/terco1.webp";
+
+
 const depoList = [
   {
     name: "Maria Silva",
     city: "São Paulo",
     img: "/img/depoimento.png",
-    text: "Entrei no desafio com o coração aflito e terminei com uma paz que não sentia há anos. O Terço Azul é uma bênção na minha vida.",
+    text: "Desde que comecei a usar o Terço Azul, minha fé se fortaleceu. Ele transmite uma paz que não sei explicar.",
     stars: 5,
   },
   {
     name: "João Ramos",
     city: "Bahia",
     img: "/img/depoimento01.png",
-    text: "No terceiro dia do desafio, senti uma clareza espiritual que mudou minha forma de orar. No sétimo, recebi uma resposta que esperava há meses.",
+    text: "O Terço Azul me acompanha em todas as orações. É lindo, resistente e tem um significado especial pra mim.",
     stars: 5,
   },
   {
     name: "Marina Araujo",
     city: "Rio de Janeiro",
     img: "/img/depoimento02.png",
-    text: "As missões diárias me ajudaram a focar e renovar minha fé. Cada oração parecia falar direto comigo. Um divisor de águas.",
+    text: "Sinto uma energia de proteção toda vez que rezo com ele. Sem dúvidas, o melhor que já tive.",
     stars: 5,
   },
   {
     name: "Neusa Ramoso",
     city: "Curitiba",
     img: "/img/depoimento03.png",
-    text: "Estou no quarto dia do desafio e já sinto mudanças no meu interior. O terço chegou rápido e é ainda mais bonito pessoalmente.",
+    text: "Comprei achando que seria só um terço bonito, mas me surpreendi com a qualidade e a sensação de paz que ele traz.",
     stars: 5,
   },
   {
     name: "Fátima Oliveira",
     city: "São Paulo",
     img: "/img/depoimento04.png",
-    text: "Recebi minha graça no sexto dia. A fé que recuperei nesse desafio não tem preço. Recomendo de olhos fechados.",
+    text: "A beleza do Terço Azul é única. Uso todos os dias, me ajuda a manter minha fé firme mesmo nos dias difíceis.",
     stars: 5,
   },
   {
     name: "Paulo Freitas",
     city: "São Paulo",
     img: "/img/depoimento05.png",
-    text: "Recebi tudo direitinho e ja comecei, ja senti muitas melhoras amem. Deus abençõe a todos.",
+    text: "Chegou rápido e bem embalado. Estou usando nas minhas orações e sentindo mais conexão espiritual. Recomendo!",
     stars: 5,
   },
 ];
 
 
-  const faqList = [
-    {
-      q: "O que é o Desafio Espiritual de 7 Dias?",
-      a: "É uma jornada guiada com orações e missões diárias, criada para ajudar você a se conectar com sua espiritualidade, buscar sua graça e transformar sua vida em apenas 7 dias.",
-    },
-    {
-      q: "O que está incluso no Desafio?",
-      a: "Você recebe: o Terço Azul da Prosperidade, o Livro físico 'Desafio Espiritual 7 Dias', acesso ao App com missões diárias, um óleo ungido, vela aromática, pôster de oração e um cartão de bênção personalizado.",
-    },
-    {
-      q: "Preciso fazer as orações em um horário específico?",
-      a: "Não. O importante é que você reserve um momento do seu dia para se conectar com fé e presença. O aplicativo ajuda você a acompanhar tudo com facilidade.",
-    },
-    {
-      q: "E se eu perder um dia do desafio?",
-      a: "Você pode retomar no dia seguinte. O importante é concluir os 7 dias com fé, intenção e comprometimento.",
-    },
-    {
-      q: "Funciona para qualquer pessoa?",
-      a: "Sim. O Desafio é para qualquer pessoa que esteja aberta à espiritualidade e deseje atrair paz, prosperidade e proteção para sua vida.",
-    },
-    {
-      q: "Tem garantia?",
-      a: "Sim. Você tem 30 dias para testar. Se não sentir nenhuma transformação, devolvemos 100% do valor sem burocracia.",
-    },
-    {
-      q: "Em quanto tempo chega meu kit?",
-      a: "O envio é imediato e o prazo médio de entrega é de 3 a 7 dias úteis. Frete grátis para todo o Brasil.",
-    },
-  ];
+
+
+const faqList = [
+  {
+    q: "O que torna o Terço Azul especial?",
+    a: "Ele é feito com contas resistentes de um azul profundo que transmite paz, fé e proteção. Seu acabamento premium e design exclusivo o tornam ideal para orações e também como símbolo de espiritualidade no dia a dia.",
+  },
+  {
+    q: "Posso usar o Terço Azul todos os dias?",
+    a: "Sim. Ele foi criado para uso diário, com materiais duráveis e confortáveis ao toque. É perfeito para suas orações e momentos de conexão espiritual.",
+  },
+  {
+    q: "Serve como acessório ou só para orar?",
+    a: "Os dois. Você pode utilizá-lo nas suas orações ou como um acessório inspirador — muitas pessoas relatam sentir mais proteção e equilíbrio ao carregá-lo consigo.",
+  },
+  {
+    q: "O Terço Azul tem garantia?",
+    a: "Sim. Você tem 30 dias para testar. Se não amar o produto, devolvemos 100% do valor. Sem complicações.",
+  },
+  {
+    q: "Em quanto tempo recebo meu terço?",
+    a: "O envio é imediato e o prazo de entrega varia de 3 a 7 dias úteis. O frete é grátis para todo o Brasil.",
+  },
+  {
+    q: "É seguro comprar por aqui?",
+    a: "Completamente. O site é protegido por certificado SSL e utilizamos os melhores gateways de pagamento do mercado.",
+  },
+];
 
 const benefits = [
   {
     icon: <img src="https://cdn-icons-png.flaticon.com/512/1818/1818141.png" alt="Saúde" className="w-12 h-12" />,
-    title: "Equilíbrio Emocional",
-    description: "Durante o desafio, você vai aprender a controlar a ansiedade e encontrar paz interior em meio ao caos.",
+    title: "Feito à Mão",
+    description: "Cada detalhe do Terço Azul é cuidadosamente trabalhado com fé e propósito.",
   },
   {
     icon: <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Fé" className="w-12 h-12" />,
-    title: "Conexão Espiritual",
-    description: "As orações guiadas de cada dia vão fortalecer sua fé e alinhar sua energia com o que realmente importa.",
+    title: "Símbolo de Proteção",
+    description: "Mais do que um acessório, é um amuleto espiritual para seu dia a dia.",
   },
   {
     icon: <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Prosperidade" className="w-12 h-12" />,
-    title: "Caminho da Prosperidade",
-    description: "Ao seguir os 7 dias de oração com fé, você ativa um ciclo de bênçãos e abre espaço para receber graças.",
+    title: "Exclusividade",
+    description: "Design celestial com contas azuis, cruz delicada e acabamento premium.",
   },
 ];
 
+
 const Index = () => {
   return (
+    
     <div className="bg-background font-outfit">
+
+      
       {/* 1. Aviso topo */}
       <section className="bg-primary px-3 py-2 text-center text-white font-medium text-base tracking-wide">
         Desafio espiritual 7 dias com o Terço Azul Celestial!<br />
@@ -118,41 +119,39 @@ const Index = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 max-w-5xl">
           {/* Left Text */}
           <div className="flex-1 text-center md:text-left px-4">
-          <h1 className="text-3xl md:text-5xl font-bold mb-5 text-primary">
-              Você Teria Coragem de <span className="text-sky-600">Orar por 7 Dias Seguidos </span><br className="hidden md:block" />
-              se Soubesse que uma <span className="text-sky-600">Graça Está Prestes a Chegar?</span>
-          </h1>
-          <p className="text-lg text-muted-foreground mb-3">
-              Descubra o poder de uma oração guiada com fé, propósito e direção. 
-              Durante 7 dias, siga as missões no app, use o Terço Azul e prepare-se para receber a graça que você tanto espera.
-          </p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-5 text-primary">
+              Use o Terço Azul por <span className="text-sky-600">7 Dias</span> & Veja <br className="hidden md:block"/>a Transformação em Sua Vida
+            </h1>
+            <p className="text-lg text-muted-foreground mb-3">
+              Eleve sua fé, encontre serenidade e sinta a proteção do sagrado em todo momento. 
+            </p>
+            <p className="text-base text-muted-foreground mb-6">
+              O Terço Azul Celestial é mais do que um acessório, é um símbolo poderoso de <strong>proteção, prosperidade e fé</strong></p>
             <a href="https://seucheckout.com" 
                className="inline-block bg-primary text-white rounded-full px-8 py-3 font-semibold shadow-md transition hover:bg-sky-700 text-lg tracking-wide"
                target="_blank" rel="noopener">
-              COMEÇAR JORNADA
+              PEÇA O SEU AGORA
             </a>
           </div>
           {/* Right Image */}
           <div className="flex-1 flex justify-center">
-            <img src={blueRosaryImg} alt="Terço Azul" />
+            <img src={terco1} alt="Terço Azul" className="rounded-lg object-contain w-full max-w-xs md:max-w-md" />
           </div>
         </div>
+        
       </section>
 
-      {/* 4. Imagens produtos (galeria simples) */}
-      <section className="container mx-auto py-10 flex flex-col md:flex-row gap-6 items-center justify-center">
-        <img src={blueRosaryKitImg} alt="Terço Azul Imagem 1" className="rounded-xl shadow-md w-full max-w-xs md:max-w-xs object-cover border border-secondary" />
-        <img src={warrantyImg} alt="Terço Azul Imagem 2" className="rounded-xl shadow-md w-full max-w-xs md:max-w-xs object-cover border border-secondary" />
-      </section>
+    
 
       {/* 5. Benefícios */}
       <section className="bg-gradient-to-tr from-[#D3E4FD] via-[#F1F1F1] to-white py-12 px-1">
-        <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-4xl px-8">
         <h2 className="text-center text-2xl md:text-4xl font-bold text-primary mb-3">
-         O Desafio Espiritual que Está Tocando Vidas
+        Proteção, Fé e Prosperidade em Suas Mãos — Com o Terço Azul Celestial
         </h2>
       <p className="text-center text-base md:text-lg text-muted-foreground mb-10">
-  Durante 7 dias, você será guiado(a) por uma jornada de oração, fé e transformação. Com o Terço Azul, o Livro de Missões e o App do Desafio, você viverá uma experiência profunda de reconexão espiritual — e muitos já relatam bênçãos alcançadas antes mesmo do 7º dia.
+      Sinta a presença do sagrado em sua rotina.
+      O Terço Azul Celestial é mais do que um símbolo — é um instrumento de fé e proteção que acompanha você todos os dias. Produzido com contas azuis marcantes e acabamento premium, ele inspira calma, fortalece a espiritualidade e já transformou a vida de milhares de pessoas.
       </p>
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8">
             {benefits.map((b,i) => (
@@ -174,41 +173,69 @@ const Index = () => {
 
 {/* 5.5 Imagem Destaque Centralizada com Imagem ao Lado */}
 <section className="bg-white py-12 px-4">
-  <div className="container mx-auto max-w-4xl p-5">
+  <div className="container mx-auto max-w-4xl px-4 sm:px-6 py-5">
     <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary mb-6">
       Veja o que acompanha o seu kit.
     </h2>
-    <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <img 
-        src="/img/tercoazul03.webp" 
+        src="/img/terco1.webp" 
         alt="Imagem Destaque" 
-        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+        className="w-full rounded-xl shadow-md object-cover border border-secondary"
       />
       <img 
-        src="/img/oleo.webp" 
+        src="/img/terco3.webp" 
         alt="Imagem Lateral" 
-        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+        className="w-full rounded-xl shadow-md object-cover border border-secondary"
       />
       <img 
-        src="/img/vela-2.webp" 
+        src="/img/terco2.webp" 
         alt="Imagem Lateral" 
-        className="w-full md:w-1/2 max-w-[528px] rounded-xl shadow-md object-cover border border-secondary"
+        className="w-full rounded-xl shadow-md object-cover border border-secondary"
       />
     </div>
   </div>
 </section>
 
+{/* 4. História do Terço Azul */}
+<section className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e0ecff] py-12 px-4">
+  <div className="container mx-auto max-w-6xl px-4 sm:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
+
+    {/* Texto primeiro no mobile */}
+    <div className="flex-1 text-center md:text-left">
+      <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+        ✨ A Origem do Terço Azul Celestial
+      </h2>
+      <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+        Inspirado por fé, criado com propósito. O Terço Azul nasceu do desejo de oferecer mais do que um objeto religioso — 
+        mas um símbolo de esperança. Sua cor remete ao céu, à calma e à presença divina. 
+        Cada conta é montada com atenção aos detalhes, para que você sinta conexão e paz a cada oração.
+      </p>
+    </div>
+
+    {/* Imagem depois no mobile */}
+    <div className="flex-1">
+      <img 
+        src="/img/terco4.webp" 
+        alt="Terço Azul Detalhe" 
+        className="w-full max-w-md mx-auto rounded-xl shadow-md object-cover border border-secondary"
+      />
+    </div>
+
+  </div>
+</section>
       {/* 6. Oferta Exclusiva */}
       <section className="container mx-auto py-14 flex justify-center items-center">
-      <div className="w-full max-w-3xl mx-4 md:mx-auto p-0 md:p-6 bg-gradient-to-tr from-[#e8f1fc] via-[#f9fbff] to-white rounded-2xl shadow-xl border border-sky-100 animate-fade-in">
+      <div className="w-full max-w-5xl mx-4 md:mx-auto p-0 md:p-6 bg-gradient-to-tr from-[#e8f1fc] via-[#f1f5f9] to-white rounded-2xl shadow-xl border border-sky-100 animate-fade-in">
           <div className="flex flex-col md:flex-row gap-0 md:gap-8">
             {/* Imagem lado esquerdo */}
-            <div className="flex-1 flex justify-center items-center bg-[#d3eafd] rounded-t-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none p-6 md:p-0">
-              <img 
-                src={blueRosaryImg} 
-                alt="Kit Terço Azul Celestial" 
-                className="w-full max-w-xs rounded-xl "/>
-            </div>
+            <div className="flex-1 flex justify-center items-center rounded-t-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none p-6 md:p-0">
+  <img 
+    src={terco1} 
+    alt="Kit Terço Azul Celestial" 
+    className="w-full rounded-xl object-cover" 
+  />
+</div>
             {/* Detalhes da Oferta */}
             <div className="flex-1 flex flex-col justify-center gap-3 px-6 py-5">
               {/* destaque Oferta e escassez */}
@@ -220,7 +247,7 @@ const Index = () => {
               </div>
               {/* Título grande */}
               <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                Kit Desafio Espiritual 7 dias + Brinde.
+                Terço Azul São Bento.
               </h2>
               {/* Avaliações */}
               <div className="flex items-center gap-1 mb-2">
@@ -243,8 +270,8 @@ const Index = () => {
               </div>
               <ul className="mb-4 space-y-2 text-base">
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Terço Azul feito à mão, contas resistentes e detalhes premium</li>
-                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Guia Exclusivo de Orações incluso</li>
-                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Óleo Ungido + Vela aromática</li>
+                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Contas de madeira de lei</li>
+                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Brinde: Óleo Ungido + Vela aromática</li>
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Envio imediato para todo o Brasil</li>
               </ul>
               {/* Garantia e Botão */}
@@ -296,7 +323,7 @@ const Index = () => {
     
 {/* 8. FAQ */}
 <div className="w-full px-4 sm:px-6 md:px-8">
-  <section className="w-full max-w-2xl mx-auto py-16 bg-white rounded-2xl my-10 shadow">
+  <section className="w-full max-w-5xl mx-auto py-8 bg-white rounded-2xl my-10 shadow">
     <h2 className="text-center text-3xl font-bold text-primary mb-6">
       Perguntas Frequentes
     </h2>
@@ -320,13 +347,13 @@ const Index = () => {
       {/* 9. Rastreio */}
       <section className="container mx-auto max-w-2xl py-12 px-2">
         <div className="rounded-2xl shadow-lg bg-gradient-to-tr from-secondary/60 to-white p-8 flex flex-col items-center">
-          <h2 className="text-2xl font-bold text-primary mb-2">Rastreie Seu Kit</h2>
+          <h2 className="text-2xl font-bold text-primary mb-2">Acompanhe seu terço azul</h2>
           <p className="text-muted-foreground mb-4 text-center">Depois de realizar seu pedido, utilize seu código de rastreio abaixo para acompanhar a entrega.</p>
           <form
             className="w-full max-w-md flex flex-col gap-3"
             method="post"
             name="form-rastreio"
-            action="https://exclusivo.presentedivino.com/?utm_source=organicjLj67cc3787642f7a8b7a7bf130"
+            action="https://rastreamento.correios.com.br/app/index.php"
             target="_blank"
             rel="noopener"
           >
