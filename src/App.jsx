@@ -110,12 +110,12 @@ const Index = () => {
       
       {/* 1. Aviso topo */}
       <section className="bg-primary px-3 py-2 text-center text-white font-medium text-base tracking-wide">
-        Peça agora - Só pague somente na entrega<br />
+      ÚLTIMAS UNIDADES!<br />
       </section>
 
       {/* 2. Mensagem frete grátis/estoque */}
       <section className="bg-secondary/80 px-3 py-1 text-center flex justify-center items-center gap-2 text-sm text-primary font-semibold border-b border-border">
-        <Truck className="inline w-5 h-5 text-primary" /> ÚLTIMAS UNIDADES! Peça Agora Pague Na Entrega 🚚
+        <Truck className="inline w-5 h-5 text-primary" /> Peça Agora Pague Na Entrega 🚚
       </section>
 
       {/* 3. Hero / CTA */}
