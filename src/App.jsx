@@ -301,7 +301,7 @@ const Index = () => {
                   R$97,00
                 </span>
                 <span className="text-base text-green-700 font-semibold px-2">
-                  Frete Grátis
+                  Pague somente quando receber!
                 </span>
               </div>
               <ul className="mb-4 space-y-2 text-base">
@@ -326,7 +326,7 @@ const Index = () => {
               </a>
               <div className="flex items-center gap-2 mt-3">
                 <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M15 9l-6 6"/></svg>
-                <span className="text-sky-800 text-sm font-medium">Pagamento seguro · Você recebe o código de rastreio por e-mail!</span>
+                <span className="text-sky-800 text-sm font-medium">Envio seguro · Você recebe o código de rastreio por e-mail!</span>
               </div>
             </div>
           </div>
