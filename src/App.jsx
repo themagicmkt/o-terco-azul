@@ -9,14 +9,14 @@ const depoList = [
     name: "Maria Silva",
     city: "São Paulo",
     img: "/img/depoimento.png",
-    text: "Só comprei porque era para pagar na entrega. Chegou direitinho e já paguei. Muito lindo",
+    text: "Esse terço me trouxe paz e proteção. Sinto que minha fé se fortaleceu. Recomendo a todos!",
     stars: 5,
   },
   {
     name: "João Ramos",
     city: "Bahia",
     img: "/img/depoimento01.png",
-    text: "Muito Bom esse negócio de pagar na entrega! O terço azul me acompanha todo dia. Deus abençõe.",
+    text: "O terço azul me acompanha todo dia. Deus abençõe. Eu não saio de mais de casa sem ele.",
     stars: 5,
   },
   {
@@ -56,10 +56,6 @@ const faqList = [
   {
     q: "O que torna o Terço Azul especial?",
     a: "Ele é feito com contas resistentes de um azul profundo que transmite paz, fé e proteção. Seu acabamento premium e design exclusivo o tornam ideal para orações e também como símbolo de espiritualidade no dia a dia.",
-  },
-  {
-    q: "Como vou pagar o terço?",
-    a: "Após o recebimento você escolhe como prefere pagar e finaliza seu pagamento pela nossa página.",
   },
   {
     q: "Posso usar o Terço Azul todos os dias?",
@@ -110,13 +106,14 @@ const Index = () => {
       
       {/* 1. Aviso topo */}
       <section className="bg-primary px-3 py-2 text-center text-white font-medium text-base tracking-wide">
-      ÚLTIMAS UNIDADES!<br />
+      TERÇO AZUL DE SÃO BENTO + LIVRO A ORAÇÃO ESQUECIDA<br />
       </section>
 
       {/* 2. Mensagem frete grátis/estoque */}
       <section className="bg-secondary/80 px-3 py-1 text-center flex justify-center items-center gap-2 text-sm text-primary font-semibold border-b border-border">
-        <Truck className="inline w-5 h-5 text-primary" /> Peça Agora Pague Na Entrega 🚚
-      </section>
+  Últimas unidades a pronta entrega
+  <Truck className="inline w-5 h-5 text-primary" />
+</section>
 
       {/* 3. Hero / CTA */}
       <section className="w-full px-2 md:px-0 py-10 bg-white bg-gradient-to-b from-secondary/60 to-background animate-fade-in">
@@ -134,7 +131,7 @@ const Index = () => {
             <a href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy" 
                className="inline-block bg-primary text-white rounded-full px-8 py-3 font-semibold shadow-md transition hover:bg-sky-700 text-lg tracking-wide"
                target="_blank" rel="noopener">
-              PAGUE NA ENTREGA
+              PEDIR MEU TERÇO AZUL
             </a>
           </div>
           {/* Right Image */}
@@ -179,27 +176,27 @@ const Index = () => {
 <section className="bg-gradient-to-br from-[#f0f9ff] via-white to-[#e6f0ff] py-12 px-4">
   <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-10">
     
-    {/* Imagem do óleo */}
+    {/* Imagem do livro */}
     <div className="flex-1 flex justify-center">
       <img 
-        src="/img/mirra.webp" 
-        alt="Óleo Ungido de Brinde" 
-        className="w-full max-w-xs " 
+        src="/img/livro.webp" 
+        alt="Ebook" 
+        className="w-full max-w-md " 
       />
     </div>
 
     {/* Texto e CTA */}
     <div className="flex-1 text-center md:text-left">
       <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">
-        Peça seu <span className="text-sky-700">Terço Azul</span> agora e <br className="hidden md:block" /> ganhe um <span className="text-green-700">Óleo Ungido</span> de brinde!
+        Peça seu <span className="text-sky-700">Terço Azul</span> agora e <br className="hidden md:block" /> ganhe o livro  <span className="text-green-700">A oração esquecida</span> gratuitamente!
       </h2>
       <p className="text-muted-foreground text-base md:text-lg mb-6 leading-relaxed">
-        Além do Terço Azul Celestial, você receberá gratuitamente um frasco de óleo ungido, abençoado e preparado especialmente para acompanhar suas orações. Uma oferta limitada para quem busca fortalecer sua fé com ainda mais poder espiritual.
+        Além do Terço Azul Celestial, você receberá gratuitamente o livro com <strong>A Oração Esquecida</strong> uma oração capaz de fazer <strong>milagres inimaginaveis</strong>. Uma oferta limitada para quem busca fortalecer sua fé com ainda mais poder espiritual.
       </p>
       <a href="https://pay.otercoazul.store/P5LNZ8znqvzgaRy"
          target="_blank" rel="noopener"
          className="inline-block bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:from-blue-600 hover:to-sky-700 transition">
-        GARANTIR MEU TERÇO COM BRINDE
+        GARANTIR MEU TERÇO + LIVRO
       </a>
     </div>
 
@@ -283,7 +280,7 @@ const Index = () => {
               </div>
               {/* Título grande */}
               <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                Terço Azul São Bento + Óleo ungido.
+                Terço Azul São Bento + Livro A Oração Esquecida.
               </h2>
               {/* Avaliações */}
               <div className="flex items-center gap-1 mb-2">
@@ -301,13 +298,13 @@ const Index = () => {
                   R$97,00
                 </span>
                 <span className="text-base text-green-700 font-semibold px-2">
-                  Pague somente quando receber!
+                  Frete gratuito!
                 </span>
               </div>
               <ul className="mb-4 space-y-2 text-base">
-                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Terço Azul feito à mão, contas resistentes e detalhes premium</li>
+                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Terço Azul de São Bento premium</li>
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Contas de madeira de lei</li>
-                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Brinde: Óleo Ungido + Vela aromática</li>
+                <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Livro: A oração esquecida</li>
                 <li className="flex items-center gap-2"><span className="bg-sky-200 rounded-full p-1"><svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span> Envio imediato para todo o Brasil</li>
               </ul>
               {/* Garantia e Botão */}
@@ -322,7 +319,7 @@ const Index = () => {
                 target="_blank"
                 rel="noopener"
               >
-                PAGAR NA ENTREGA
+                PEDIR MEU TERÇO + LIVRO
               </a>
               <div className="flex items-center gap-2 mt-3">
                 <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M15 9l-6 6"/></svg>
@@ -383,7 +380,7 @@ const Index = () => {
       {/* 9. Rastreio */}
       <section className="container mx-auto max-w-2xl py-12 px-2">
         <div className="rounded-2xl shadow-lg bg-gradient-to-tr from-secondary/60 to-white p-8 flex flex-col items-center">
-          <h2 className="text-2xl font-bold text-primary mb-2">Acompanhe seu terço azul</h2>
+          <h2 className="text-2xl font-bold text-primary mb-2">Acompanhe seu pedido</h2>
           <p className="text-muted-foreground mb-4 text-center">Depois de realizar seu pedido, utilize seu código de rastreio abaixo para acompanhar a entrega.</p>
           <form
             className="w-full max-w-md flex flex-col gap-3"
